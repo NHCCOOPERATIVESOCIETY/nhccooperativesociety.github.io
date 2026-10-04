@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="cljveUtJma0CjiQoV6FgnfIHDiR6no-m4Dz1JzxOa9A" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NHC Co-operative Society | Sign in</title>
+<meta name="robots" content="noindex">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+  :root {
+    --ink: #14261e;
+    --muted: #4f625a;
+    --green: #1e5a46;
+    --green-dark: #143f31;
+    --gold: #c28e1f;
+    --paper: #f2f6f4;
+    --card: #ffffff;
+    --line: #d5e0db;
+    --error: #a12a2a;
+    --error-bg: #fbeeee;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .band {
+    background: var(--green);
+    color: #fff;
+    padding: 28px 20px 64px;
+    border-bottom: 5px solid var(--gold);
+  }
+  .band-inner { max-width: 440px; margin: 0 auto; display: flex; align-items: center; gap: 14px; }
+  .mark {
+    width: 46px; height: 46px; border-radius: 50%;
+    background: #fff; color: var(--green);
+    display: grid; place-items: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700; font-size: 17px; letter-spacing: 0.5px;
+    flex: none;
+  }
+  .band h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .band p { margin: 2px 0 0; font-size: 14px; opacity: 0.85; }
+  main { flex: 1; padding: 0 16px 32px; }
+  .card {
+    max-width: 440px;
+    margin: -40px auto 0;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 24px 24px;
+    box-shadow: 0 6px 24px rgba(20, 38, 30, 0.08);
+  }
+  .card h2 {
+    margin: 0 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .lead { margin: 0 0 22px; color: var(--muted); font-size: 16px; line-height: 1.5; }
+  #gbtn { min-height: 44px; display: flex; justify-content: flex-start; }
+  .msg {
+    margin: 18px 0 0;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--muted);
+    min-height: 22px;
+  }
+  .msg.error {
+    color: var(--error);
+    background: var(--error-bg);
+    border-left: 4px solid var(--error);
+    padding: 10px 12px;
+    border-radius: 4px;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 11px 18px;
+    border: 1px solid var(--green);
+    background: var(--green);
+    color: #fff;
+    font-weight: 600;
+  }
+  .actions button.alt { background: #fff; color: var(--green); }
+  .field { margin-top: 14px; }
+  .field label { display: block; font-size: 14px; margin-bottom: 6px; color: var(--muted); }
+  .field input[type=password], .field input[type=text] {
+    width: 100%; font: inherit; font-size: 16px; padding: 11px 12px;
+    border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink);
+  }
+  .hint { font-size: 13px; line-height: 1.5; color: var(--muted); margin: 10px 0 0; }
+  .showpw { display: block; font-size: 14px; margin-top: 10px; color: var(--muted); }
+  .linkbtn { background: none; border: 0; padding: 0; color: var(--green-dark); text-decoration: underline; font: inherit; cursor: pointer; }
+  .help {
+    margin: 22px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .help strong { color: var(--ink); }
+  footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 16px 24px; }
+  a { color: var(--green-dark); }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+<meta name="google-site-verification" content="cljveUtJma0CjiQoV6FgnfIHDiR6no-m4Dz1JzxOa9A" />
+</head>
+<body>
+
+<header class="band">
+  <div class="band-inner">
+    <div class="mark" aria-hidden="true">NHC</div>
+    <div>
+      <h1>NHC Co-operative Society</h1>
+      <p>Members and officials portal</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- App Purpose Section for Google Compliance Verification -->
+  <section class="card" style="margin: -40px auto 20px; padding: 20px 24px;">
+    <h2 style="font-size: 18px; margin-bottom: 8px;">About the Portal</h2>
+    <p style="font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0;">
+      The <strong>NHC Co-operative Society System</strong> is a private management utility designed for members and officials of the society. This secure portal allows authorized users to track their financial contributions, view dividend distributions, manage loan balances, and process guarantor approvals. 
+    </p>
+    <p style="font-size: 14px; line-height: 1.5; color: var(--muted); margin: 8px 0 0;">
+      Our application utilizes <strong>Google OAuth login</strong> strictly as a secure identity verification mechanism to match incoming sessions with pre-registered society email profiles.
+    </p>
+  </section>
+
+  <!-- Existing Sign In Card -->
+  <section class="card" aria-labelledby="title">
+    <h2 id="title">Sign in to your account</h2>
+    <p class="lead">Use the Google account you registered with the society.</p>
+
+    <div id="gbtn"></div>
+    <p id="msg" class="msg" role="status" aria-live="polite"></p>
+    <div id="actions" class="actions"></div>
+    <form id="pwform" class="pwform" style="display:none" autocomplete="on"></form>
+
+    <p class="help">
+      <strong>Not registered yet?</strong> Ask a society official to add your email address,
+      then sign in with that same Google account.
+    </p>
+  </section>
+</main>
+
+
+<footer>
+  Keep this page bookmarked. Always open the portal from here.<br>
+  <span style="opacity:.6">Sign-in page version 2 (with password)</span><br>
+  <a href="privacy.html" style="margin-top: 6px; display: inline-block;">Privacy Policy</a>
+</footer>
+
+<script>
+  window.onerror = function (message, source, line) {
+    var el = document.getElementById('msg');
+    if (el) { el.className = 'msg error'; el.textContent = 'Page error: ' + message + ' (line ' + line + ')'; }
+  };
+</script>
+<script>
+  // ------------------------------------------------------------------
+  // SETTINGS: change these two values only
+  // ------------------------------------------------------------------
+  var CLIENT_ID = '920703411991-6h6iroq1v3q9v0lurgek8r3vush8hcfa.apps.googleusercontent.com';
+  var EXEC_URL  = 'https://script.google.com/macros/s/AKfycbyJoNnylfZlTfnWwNUTbytF9F3uPfenSapfcpl-bR3w69s7G_OKIhIPVHm3iZaj07Fu/exec'; // the web app link that ends with /exec
+  // ------------------------------------------------------------------
+
+  var ALLOWED_NEXT = ['home', 'guarantor', 'review', 'loans'];
+  var SESSION_KEY  = 'coop_session';
+
+  var params    = new URLSearchParams(window.location.search);
+  var nextView  = params.get('next') || '';
+  var reqId     = params.get('req') || '';
+  var signedOut = params.get('signedout') === '1';
+  var expired   = params.get('expired') === '1';
+
+  var msgEl     = document.getElementById('msg');
+  var gbtnEl    = document.getElementById('gbtn');
+  var actionsEl = document.getElementById('actions');
+
+  var googleStarted = false;
+  var redirecting   = false;
+  var resumeTries   = 0;
+  var waitingRetry  = null;   // holds the saved token while the "could not reach server" screen is showing
+
+  // ---------- small helpers ----------
+  function showMessage(text, isError) {
+    msgEl.textContent = text || '';
+    msgEl.className = 'msg' + (isError ? ' error' : '');
+  }
+
+  function clearActions() { actionsEl.innerHTML = ''; }
+
+  function addAction(label, handler, alt) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = label;
+    if (alt) b.className = 'alt';
+    b.onclick = handler;
+    actionsEl.appendChild(b);
+  }
+
+  function getSaved() {
+    try { return localStorage.getItem(SESSION_KEY) || ''; } catch (e) { return ''; }
+  }
+  function saveSession(s) {
+    try { localStorage.setItem(SESSION_KEY, s); return true; } catch (e) { return false; }
+  }
+  function clearSession() {
+    try { localStorage.removeItem(SESSION_KEY); } catch (e) {}
+  }
+
+  function buildTargetUrl(session) {
+    var q = new URLSearchParams();
+    q.set('session', session);
+    if (ALLOWED_NEXT.indexOf(nextView) !== -1) q.set('next', nextView);
+    if (/^[A-Za-z0-9_-]{1,40}$/.test(reqId)) q.set('req', reqId);
+    return EXEC_URL + (EXEC_URL.indexOf('?') === -1 ? '?' : '&') + q.toString();
+  }
+
+  // Calls the Apps Script web app and returns parsed JSON.
+  // Rejects on network failure, timeout, or a non-JSON reply (all "temporary" problems).
+  function callServer(query, timeoutMs) {
+    var url = EXEC_URL + (EXEC_URL.indexOf('?') === -1 ? '?' : '&') + query;
+    var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, timeoutMs || 20000) : null;
+    return fetch(url, ctrl ? { signal: ctrl.signal } : undefined)
+      .then(function (res) { return res.json(); })
+      .then(function (data) { if (timer) clearTimeout(timer); return data; },
+            function (err)  { if (timer) clearTimeout(timer); throw err; });
+  }
+
+  // ---------- password screens ----------
+  var pwForm = document.getElementById('pwform');
+
+  // Passwords are sent in the body of a POST, never in a web address.
+  function postServer(obj, timeoutMs) {
+    var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, timeoutMs || 30000) : null;
+    var opts = { method: 'POST', body: JSON.stringify(obj) };
+    if (ctrl) opts.signal = ctrl.signal;
+    return fetch(EXEC_URL, opts)
+      .then(function (res) { return res.json(); })
+      .then(function (data) { if (timer) clearTimeout(timer); return data; },
+            function (err)  { if (timer) clearTimeout(timer); throw err; });
+  }
+
+  function hidePassword() { pwForm.style.display = 'none'; pwForm.innerHTML = ''; }
+
+  function showPasswordScreen(mode, session) {
+    var create = (mode === 'create');
+    gbtnEl.style.display = 'none';
+    clearActions();
+
+    pwForm.innerHTML =
+      '<div class="field"><label for="pw1">' + (create ? 'Create a password' : 'Password') + '</label>' +
+      '<input id="pw1" name="password" type="password" required autocomplete="' + (create ? 'new-password' : 'current-password') + '"></div>' +
+      (create ? '<div class="field"><label for="pw2">Type it again</label>' +
+        '<input id="pw2" name="password2" type="password" required autocomplete="new-password"></div>' +
+        '<p class="hint">At least 8 characters. Do not use your name, phone number or something easy like 12345678.</p>' : '') +
+      '<label class="showpw"><input type="checkbox" id="pwShow"> Show password</label>' +
+      '<div class="actions"><button type="submit" id="pwGo">' + (create ? 'Save password' : 'Continue') + '</button></div>' +
+      (create ? '' : '<p class="hint">Forgot your password? Ask the Secretary to reset it, then sign in with Google again.</p>') +
+      '<p class="hint"><button type="button" class="linkbtn" id="pwOther">Use a different account</button></p>';
+    pwForm.style.display = 'block';
+
+    showMessage(create
+      ? 'Welcome. Create a password to protect your account. You will use it whenever you come back to the portal.'
+      : 'Enter your password to continue.');
+
+    document.getElementById('pwShow').onchange = function () {
+      var t = this.checked ? 'text' : 'password';
+      document.getElementById('pw1').type = t;
+      var p2 = document.getElementById('pw2'); if (p2) p2.type = t;
+    };
+    document.getElementById('pwOther').onclick = function () {
+      window.location.href = window.location.pathname + '?signedout=1';
+    };
+    pwForm.onsubmit = function (ev) { ev.preventDefault(); submitPassword(mode, session); return false; };
+    document.getElementById('pw1').focus();
+  }
+
+  function submitPassword(mode, session) {
+    var create = (mode === 'create');
+    var p1 = document.getElementById('pw1').value;
+    var p2El = document.getElementById('pw2');
+    if (!p1) { showMessage('Please enter your password.', true); return; }
+    if (create) {
+      if (p1.length < 8) { showMessage('Your password must be at least 8 characters.', true); return; }
+      if (!p2El || p1 !== p2El.value) { showMessage('The two passwords do not match.', true); return; }
+    }
+
+    var go = document.getElementById('pwGo');
+    go.disabled = true;
+    showMessage(create ? 'Saving...' : 'Checking...');
+
+    postServer({ action: create ? 'setPassword' : 'unlock', session: session, password: p1 }, 30000)
+      .then(function (r) {
+        if (r && r.ok) {
+          redirecting = true;
+          window.location.replace(buildTargetUrl(session));
+          return;
+        }
+        go.disabled = false;
+        var reason = r && r.reason;
+        if (reason === 'wrong_password') {
+          showMessage('That password is not correct. ' + r.attemptsLeft + ' attempt' + (r.attemptsLeft === 1 ? '' : 's') + ' left.', true);
+          document.getElementById('pw1').value = '';
+          document.getElementById('pw1').focus();
+          return;
+        }
+        if (reason === 'locked_out') {
+          showMessage('Too many wrong attempts. Please try again in ' + r.minutes + ' minute' + (r.minutes === 1 ? '' : 's') + '.', true);
+          return;
+        }
+        if (reason === 'weak') { showMessage(r.message || 'Please choose a stronger password.', true); return; }
+        if (reason === 'already_set') { showPasswordScreen('enter', session); return; }
+        if (reason === 'expired' || reason === 'sign_in_again' || reason === 'setup_required') {
+          hidePassword();
+          clearSession();
+          showMessage('Please sign in with Google again to continue.');
+          startGoogle();
+          return;
+        }
+        showMessage('Something went wrong. Please try again.', true);
+      })
+      .catch(function () {
+        go.disabled = false;
+        showMessage('Could not reach the server. Check your internet connection and try again.', true);
+      });
+  }
+
+  // ---------- resume a saved session ----------
+  // Only a clear "expired" answer from the server removes the saved sign-in.
+  // Network trouble (changing Wi-Fi/data, weak signal) keeps it and retries.
+  function resume(saved) {
+    waitingRetry = null;
+    clearActions();
+    gbtnEl.style.display = 'none';
+    showMessage(resumeTries ? 'Reconnecting...' : 'Opening your dashboard...');
+
+    callServer('action=checkSession&session=' + encodeURIComponent(saved), 20000)
+      .then(function (r) {
+        if (r && r.ok) {
+          if (r.passwordRequired && r.locked) {
+            if (!r.setup) { showPasswordScreen('enter', saved); return; }
+            if (r.fresh)  { showPasswordScreen('create', saved); return; }
+            // Saved sign-in exists but no password yet and it is too old to create one safely.
+            clearSession();
+            showMessage('For your security, please sign in with Google once more. You will then create your password.');
+            startGoogle();
+            return;
+          }
+          redirecting = true;
+          window.location.replace(buildTargetUrl(saved));
+          return;
+        }
+        if (r && r.reason === 'expired') {
+          clearSession();
+          showMessage('Your session has ended. Please sign in again.', false);
+          startGoogle();
+          return;
+        }
+        throw new Error('temporary');
+      })
+      .catch(function () {
+        if (redirecting) return;
+        resumeTries++;
+        if (resumeTries < 4) {
+          setTimeout(function () { resume(saved); }, 2000 * resumeTries);
+          return;
+        }
+        showRetry(saved);
+      });
+  }
+
+  function showRetry(saved) {
+    waitingRetry = saved;
+    clearActions();
+    showMessage('We could not reach the server. You are still signed in on this device. Check your internet connection and try again.', true);
+    addAction('Try again', function () { resumeTries = 0; resume(saved); }, false);
+    addAction('Sign in with Google instead', function () { clearActions(); startGoogle(); }, true);
+  }
+
+  // ---------- fresh Google sign-in ----------
+  function handleCredential(response) {
+    if (!response || !response.credential) {
+      showMessage('Sign-in did not finish. Tap the button to try again.', true);
+      return;
+    }
+    showMessage('Signing you in...');
+
+    var q = 'action=createSession&idt=' + encodeURIComponent(response.credential);
+    if (ALLOWED_NEXT.indexOf(nextView) !== -1) q += '&next=' + encodeURIComponent(nextView);
+
+    callServer(q, 30000)
+      .then(function (r) {
+        if (r && r.ok && r.session) {
+          saveSession(r.session);
+          try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+          if (r.passwordRequired) {
+            showPasswordScreen(r.setup ? 'create' : 'enter', r.session);
+            return;
+          }
+          redirecting = true;
+          window.location.replace(buildTargetUrl(r.session));
+          return;
+        }
+        var reasons = {
+          'no_token': 'No sign-in credential was received. Please try again.',
+          'token_invalid': 'Your Google sign-in could not be verified. Reload this page and try again.',
+          'not_registered': 'This Google account is not registered with the society. Ask an official to add it, or sign in with the correct account.',
+          'error': 'The server had a problem. Please try again in a moment.'
+        };
+        showMessage(reasons[r && r.reason] || 'Sign-in failed. Please try again.', true);
+      })
+      .catch(function () {
+        showMessage('Could not reach the server. Check your internet connection, then tap the button to try again.', true);
+      });
+  }
+
+  var attempts = 0;
+  function startGoogle() {
+    if (googleStarted) { gbtnEl.style.display = 'flex'; return; }
+
+    if (EXEC_URL.indexOf('https://script.google.com/') !== 0) {
+      showMessage('This page is not set up yet: the portal link is missing in index.html.', true);
+      return;
+    }
+    if (!(window.google && google.accounts && google.accounts.id)) {
+      attempts++;
+      if (attempts > 60) {
+        showMessage('Google Sign-In could not load. Check your internet connection and reload this page.', true);
+        return;
+      }
+      setTimeout(startGoogle, 150);
+      return;
+    }
+
+    googleStarted = true;
+    gbtnEl.style.display = 'flex';
+
+    google.accounts.id.initialize({
+      client_id: CLIENT_ID,
+      callback: handleCredential,
+      auto_select: false,
+      cancel_on_tap_outside: false,
+      itp_support: true
+    });
+
+    google.accounts.id.renderButton(gbtnEl, {
+      type: 'standard',
+      theme: 'filled_blue',
+      size: 'large',
+      text: 'signin_with',
+      shape: 'rectangular',
+      width: 300
+    });
+
+    setTimeout(function () {
+      if (!gbtnEl.children.length) {
+        showMessage('The Google button did not load. Google may not accept this page address yet. Check Authorized JavaScript origins in Google Cloud.', true);
+      }
+    }, 4000);
+
+    if (!msgEl.textContent) showMessage('Please click the button above to sign in.');
+  }
+
+  // ---------- start ----------
+  function boot() {
+    if (signedOut) {
+      var old = getSaved();
+      clearSession();
+      // Also end the session on the server, so the old token stops working everywhere.
+      if (old) { callServer('action=endSession&session=' + encodeURIComponent(old), 15000).catch(function () {}); }
+      showMessage('You have signed out.');
+      startGoogle();
+      if (window.google && google.accounts && google.accounts.id) { google.accounts.id.disableAutoSelect(); }
+      return;
+    }
+
+    if (expired) {
+      clearSession();
+      showMessage('Your session has ended. Please sign in again.');
+      startGoogle();
+      return;
+    }
+
+    var saved = getSaved();
+    if (saved) {
+      resume(saved);
+    } else {
+      startGoogle();
+    }
+  }
+
+  window.addEventListener('load', boot);
+
+  // Back online after a network change: retry straight away if we were waiting.
+  window.addEventListener('online', function () {
+    if (waitingRetry && !redirecting) { resumeTries = 0; resume(waitingRetry); }
+  });
+
+  // If the page sat hidden for a long time, start fresh.
+  var hiddenAt = 0;
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return; }
+    if (hiddenAt && (Date.now() - hiddenAt) > 10 * 60000 && !redirecting) { location.reload(); }
+    hiddenAt = 0;
+  });
+</script>
+</body>
+</html>
